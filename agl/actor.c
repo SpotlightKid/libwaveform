@@ -210,7 +210,7 @@ agl_actor__free(AGlActor* actor)
 	g_list_free0(actor->children);
 
 #ifdef AGL_ACTOR_RENDER_CACHE
-	if(actor->fbo) agl_fbo_free(actor->fbo);
+	if(actor->fbo) agl_fbo_free0(actor->fbo);
 #endif
 
 	while(actor->transitions)
