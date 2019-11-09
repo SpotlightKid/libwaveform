@@ -36,5 +36,5 @@ selectable_init (AGlBehaviour* behaviour, AGlActor* actor)
 {
 	SelectBehaviour* selectable = (SelectBehaviour*)behaviour;
 
-	observable_subscribe (selectable->observable, selectable->on_select, actor);
+	agl_observable_subscribe (selectable->observable, selectable->on_select, actor);
 }
